@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Список дел</h1>
+    <div class="progress-bar">
+      <h2 class="subtitle">Завершенные задачи</h2>
+      <div class="progress-bar__numbers">
+        <span id="score">0</span>
+        <span id="count">0</span>
+      </div>
+    </div>
+    <form id="form">
+      <h2 class="subtitle">Добавить новую задачу</h2>
+      <div class="task-submit">
+        <input class="task-submit__input" id="submit-input" type="text" placeholder="Записать задачу">
+        <button class="task-submit__btn" id="submit-btn" type="submit">
+          <span>+</span>
+        </button>
+      </div>
+    </form>
+    <ul class="list">Список задач на сегодня
+      <!-- <li class="list__item">
+        <span class="item__text">Задача №1</span>
+        <div class="wrapper__btn">
+          <input class="checkbox-done" type="checkbox" name="checkbox">
+          <button class="btn-delete" type="button" data-action="delete">
+            <img class="image-btn_delete" src="./images/trash.svg" alt="trash">
+          </button>
+        </div>
+      </li> -->
+    </ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
