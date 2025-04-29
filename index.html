@@ -10,13 +10,7 @@
 <body>
   <div class="container">
     <h1 class="title">Список дел</h1>
-    <div class="progress-bar">
-      <h2 class="subtitle">Завершенные задачи</h2>
-      <div class="progress-bar__numbers">
-        <span id="score">0</span>
-        <span id="count">0</span>
-      </div>
-    </div>
+    <div class="date"></div>
     <form id="form">
       <h2 class="subtitle">Добавить новую задачу</h2>
       <div class="task-submit">
@@ -26,7 +20,11 @@
         </button>
       </div>
     </form>
-    <ul class="list">Список задач на сегодня
+    <div class="scoreTasks">
+         <span>Задачи на сегодня</span>
+         <span id="score">0</span>
+    </div>
+    <ul class="list">
       <!-- <li class="list__item">
         <span class="item__text">Задача №1</span>
         <div class="wrapper__btn">
