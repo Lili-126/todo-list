@@ -18,6 +18,7 @@ html {
   block-size: inherit;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 button {
