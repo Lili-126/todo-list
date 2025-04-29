@@ -36,12 +36,6 @@ ul {
   line-height: clamp(3rem, 2.767rem + 1.04vw, 3.7rem);
 }
 
-span {
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 3rem;
-}
-
 @media all and (max-width: 560px) {
   span {
     font-size: 1.6rem;
@@ -87,53 +81,20 @@ body {
   margin-bottom: 30px;
 }
 
-.subtitle {
-  margin-bottom: 20px;
-}
-
-.progress-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.date {
+  text-align: center;
   margin-bottom: 30px;
+}
+
+.text-date{
   color: var(--color-primary);
-}
-
-.progress-bar__numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: clamp(85px, 6.94vw, 120px);
-  height: 60px;
-  border: 3px solid var(--color-secondary);
-  border-radius: 15px;
-}
-
-#score,
-#count {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
   font-size: 2.8rem;
   line-height: 2.9rem;
   font-weight: 700;
 }
 
-#score {
-  border-right: 3px solid var(--color-secondary);
-}
-
-@media all and (max-width: 560px) {
-  .progress-bar__numbers {
-    height: 50px;
-  }
-
-  #score,
-  #count {
-    font-size: 2.3rem;
-    line-height: 2.4rem;
-  }
+.subtitle {
+  margin-bottom: 20px;
 }
 
 .task-submit {
@@ -190,6 +151,32 @@ body {
   color:  var(--color-secondary);
 }
 
+.scoreTasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  color: var(--color-primary);
+  font-size: 2.8rem;
+  line-height: 2.9rem;
+  font-weight: 700;
+}
+
+#score {
+  width: 70px;
+  border: 3px solid #eeedb1;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media all and (max-width: 560px) {
+
+  #score {
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+  }
+}
+
 .list {
   margin-bottom: 40px;
 }
@@ -202,6 +189,9 @@ body {
 
 .item__text {
   flex-basis: 72%;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 3rem;
 }
 
 .item__text_done {

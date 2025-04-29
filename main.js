@@ -2,7 +2,25 @@ const formSubmit = document.querySelector('#form');
 const submitInput = document.querySelector('#submit-input');
 const list = document.querySelector('.list');
 let score = 0;
-let count = 0;
+
+
+const createDate = () => {
+  const date = document.querySelector('.date');
+  const textDate = document.createElement('span');
+  textDate.classList.add('text-date');
+  let a = new Date().toLocaleString('ru',
+    {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  console.log(a);
+  textDate.innerHTML = a;
+  date.append(textDate);
+}
+createDate();
+
+
 
 
 //создаёт новую задачу
@@ -44,13 +62,6 @@ const addListItem = (e) => {
 
 formSubmit.addEventListener('submit', addListItem);
 
-
-//считает выполненные задачи
-const calcDoneTasks = (count) => {
-  const spanScore = document.querySelector('#count');
-  spanScore.textContent = `${count}`;
-}
-
 //отмечает выполненные задачи
 const checkedTask = (target) => {
   const parentNode = target.closest('.list__item');
@@ -59,8 +70,6 @@ const checkedTask = (target) => {
 
   if (taskText) {
     taskText.classList.add('item__text_done');
-    count += 1;
-    calcDoneTasks(count);
   }
 
   if (taskTextDone) {
