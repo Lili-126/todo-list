@@ -6,17 +6,12 @@ let score = 0;
 
 const createDate = () => {
   const date = document.querySelector('.date');
-  const textDate = document.createElement('span');
-  textDate.classList.add('text-date');
-  let a = new Date().toLocaleString('ru',
+  date.textContent = new Date().toLocaleString('ru',
     {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
     });
-  console.log(a);
-  textDate.innerHTML = a;
-  date.append(textDate);
 }
 createDate();
 
@@ -36,7 +31,7 @@ const createListItem = (taskText) => {
             <img class="image-btn_delete" src="./images/trash.svg" alt="trash">
           </button>
         </div>
-  `
+  `;
   list.append(listItem);
 }
 
