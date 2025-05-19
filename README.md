@@ -4,7 +4,11 @@
 https://lili-126.github.io/todo-list/
 
 
-![Снимок экрана 2025-05-19 142947](https://github.com/user-attachments/assets/ba5159e6-4f3f-4ea7-9e78-dd1f48e9df90)
+
+![Снимок экрана 2025-05-19 150124](https://github.com/user-attachments/assets/13abb57b-3c32-4252-b4c7-4d8b7c2d7570)
+
+
+
 
 
 функциональность приложения:
